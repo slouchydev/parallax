@@ -28,14 +28,15 @@ h2 {
 }
 
 h3 {
-   font-family:"Oxygen";
-   font-weight: normal;
-   font-size: 16px;
-   text-align: center;
-   margin: 5px 0;
+	font-family:"Oxygen";
+	font-weight: normal;
+	font-size: 16px;
+	text-align: center;
+	margin: 5px 0;
 	padding: 0;
 	z-index: 1;
 	position: relative;
+	color: #F60;
 }
 
 .center { margin: 0 auto; }
@@ -50,7 +51,7 @@ h3 {
 	margin-top: 30px;
 }
 
-#nav { width: 750px; float: right; margin-top: 20px; }
+#nav { width: 650px; float: right; margin-top: 20px; }
 #logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Oxygen"; font-weight: bold; }
 #nav ul{
 	list-style: none;
@@ -66,8 +67,8 @@ h3 {
 }
 
 #nav li a { color: #fff; opacity:0.9; font-size: 16px; text-decoration: none; font-family: 'Oxygen'; }
-#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
-#nav li a:hover { color: #fff; opacity:1;  }
+#nav li a.active { color: #0f75bc; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a:hover { color: #0f75bc; opacity:1;  }
 
 .quotes {
  font-family: 'Oxygen', serif;
@@ -80,7 +81,7 @@ h3 {
  .author_name_white { font-family:"Oxygen";  margin: 70px 0 0 75px; color: #fff; font-size: 20px; }
  .author_name_gray { font-family:"Oxygen";  margin: 70px 0 0 75px; color: #94a4a4; font-size: 20px; }
  .quotes_container { width: 800px; margin: 0 auto; }
-#quest{ background: url('../img/questvp.png')no-repeat; width: 1000px; height: 534px; margin: 0 auto; position: relative; bottom: -35px;}
+#quest{ background: url('../img/quest_white_slim.png')no-repeat; width: 851px; height: 250px; margin: 0 auto; position: relative; bottom: 1px;}
 #christmas_tree { background: url('../img/christmas-tree.png')no-repeat; width: 48px; height: 77px; margin: 0 auto; position: relative; bottom: -35px;}
 #divider { background: url('../img/divider.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
 #ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto;  display: block; position: relative; top: -38px; }
@@ -89,7 +90,7 @@ h3 {
 
 #slide1, #slide2{ width: 100%; }
 #slide1{
-	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
+	background:url('../img/sf.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 600px;
 	margin: 0;
