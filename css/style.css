@@ -51,6 +51,18 @@ h3 {
 	margin-top: 30px;
 }
 
+#copyright {
+font-family:"Oxygen";
+	font-weight: normal;
+	font-size: 12px;
+	text-align: center;
+	margin: 5px 0;
+	padding: 0;
+	z-index: 1;
+	position: relative;
+	color: #F60;
+}
+
 #nav { width: 650px; float: right; margin-top: 20px; }
 #logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Oxygen"; font-weight: bold; }
 #nav ul{
@@ -129,4 +141,11 @@ h3 {
 	padding: 250px 0;
 	color: #fff;
 	background-size: cover;
+}
+
+#slide6{
+	background-color: #fff;
+	color: #333333;
+	height: 25px;
+	padding: 0px 0;
 }

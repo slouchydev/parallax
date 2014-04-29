@@ -2,11 +2,40 @@
 <html lang="en">
   <head>
 	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-       <title> A Quest Paralax scrolling site</title>
+       <title>Quest Venture Partners</title>
        <link rel="stylesheet" href="css/style.css"/>
 	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
        <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 	   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
 
 </head>
 
@@ -75,9 +104,17 @@
 		    <h3>“Don't fuck with the Jesus” </h3>
 		    <img src="img/bob.png" align="left"/> <h4>Bob Hope</h4>
 		  </div>
-		<div id="copyright"><a href="http://www.questvp.com/">Copyright Quest Venture Partners </a></div>
-		</div>
+        </div>
+      </div>
 
-    </div>
+	<div id="slide6">
+		<div>
+          <div>
+		    <h3>“Copyright and all that Jazz” </h3>
+		  </div>
+		 <div id="copyright"><a href="http://www.questvp.com/">Copyright Quest Venture Partners </a></div>
+		</div>
+      </div>
+    
 </body>
 </html>
