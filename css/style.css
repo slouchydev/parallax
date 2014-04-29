@@ -136,9 +136,9 @@ font-family:"Oxygen";
 
 #slide5{
 	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
-	height: 200px;
+	height: 600px;
 	margin: 0 auto;
-	padding: 250px 0;
+	padding: 100px 0;
 	color: #fff;
 	background-size: cover;
 }
