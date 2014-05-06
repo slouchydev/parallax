@@ -6,8 +6,10 @@
        <link rel="stylesheet" href="css/style.css"/>
 	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	   <!-- load the tweenlite and cssplugin files-->
-	   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
-	   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+	    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+	    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
 	   <!--load in the font files -->
        <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 	   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -75,6 +77,37 @@ $(document).ready(function() {
 		</div>
     </div>
 
+	<!--add in a ScrollMagic Controller -->
+	<script>
+		var controller;
+		$(document).ready(function($) {
+			// init controller
+			controller = new ScrollMagic();
+		});
+	</script>
+<section class="slide2">
+	<div id="spacer_s0"></div>
+	<div id="fadein_picture"></div>
+	<div class="spacer_s1"></div>
+	<div class="spacer_s2"></div>
+	<script>
+		$(document).ready(function($) {
+				// build tween
+				//var tween = TweenMax.to("#fadein_picture", 1, {rotation: 360, ease: Linear.easeNone});
+				var tween = TweenMax.to("#fadein_picture", 1, {opacity:1});
+				// build scene
+				var scene = new ScrollScene({triggerElement: "#spacer_s0", duration: 300})
+								.setTween(tween)
+								.setPin("#fadein_picture", {pushFollowers: false})
+								.addTo(controller);
+
+				// show indicators (requires debug extension)
+				scene.addIndicators();
+			});
+		</script>
+</section>
+	
+<!-- commented out for fadein
 	<div id="slide2">
 		<div >
             <div>
@@ -83,12 +116,12 @@ $(document).ready(function() {
 		</div>
 		</div>
     </div>
-
+-->
    <div id="slide3">
 		<div>
-			   <div>
+			   <div id="fadein2_picture">
 		       <h3>“We are operators”</h3>
-		      <img src="img/norman.png" align="left"/> <h4>Norman Vincent Peale </h4>
+		      <h4>Norman Vincent Peale </h4>
 		    </div>
 		</div>
     </div>
